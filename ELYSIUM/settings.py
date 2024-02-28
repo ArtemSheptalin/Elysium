@@ -14,7 +14,7 @@ SECRET_KEY = 'django-insecure-a_1j@jes&a50u_f1rc%)pk4-wz&qpnf$fb@e-=pg9#s^lol(!n
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['3d3d-46-138-84-165.ngrok-free.app']
+# ALLOWED_HOSTS = ['3d3d-46-138-84-165.ngrok-free.app']
 
 # Application definition
 
@@ -121,7 +121,7 @@ STATICFILES_DIRS = [
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-CSRF_TRUSTED_ORIGINS = [
-    'https://3d3d-46-138-84-165.ngrok-free.app',
-]
+# CSRF_TRUSTED_ORIGINS = [
+#     'https://3d3d-46-138-84-165.ngrok-free.app',
+# ]
 

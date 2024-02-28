@@ -1,0 +1,181 @@
+{% load static %}
+{% load widget_tweaks %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+	<meta name="viewport" content="width=device-width">
+	<title>{% block title %}{% endblock %}</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery.Marquee/1.5.0/jquery.marquee.min.js"></script>
+	<link rel="stylesheet" href={% static "css/style.css" %}>
+	<link rel="icon" href={% static "img/favicon.png" %}>
+	</head>
+	<body>
+        <header class="header">
+            <nav class="header__row">
+                <a class="logo-icon" href={% url "main_page"%}>
+					<div class="main-icon"><img src={% static "img/icons/Elysium.svg"%} alt="#"></div>
+					<span>Artem </br> Sheptalin</span>
+				</a>
+				<ul class="header-navigation">
+					<li class="header-navigation__point header-navigation__drop"> {% comment %} header-navigation__drop {% endcomment %}
+						<a class="link" href={% url "services"%} id="services__url">Services</a>
+						<div class="none-space"></div>
+						{% comment %} <ul class="drop-menu">
+							<li>
+								<a href="{% url "services"%}#development" id="anchor_development">Development</a>
+							</li>
+							<li>
+								<a href="{% url "services"%}#intelligence" class="anchor__link">Artificial Intelligence</a>
+							</li>
+							<li>
+								<a href="{% url 'services' %}#management" class="anchor__link">Projects Management</a>
+							</li>
+							<li>
+								<a href="{% url 'services' %}#analysis" class="anchor__link">Data Analysis</a>
+							</li>
+							<li>
+								<a href="{% url 'services' %}#integration" class="anchor__link">Products Optimization</a>
+							</li>
+						</ul> {% endcomment %}
+					</li>
+					<li class="header-navigation__point"><a class="link" href={% url "idea" %}>Community Idea</a></li>
+					<li class="header-navigation__point"><a class="link" href={% url "career" %}>Clients</a></li>
+					<li class="header-navigation__point"><a class="link" href={% url "projects" %}>Portfolio</a></li>
+				</ul>
+				<a href="{% url 'main_page' %}#connection_form" class="header-button">
+					Contact me 
+					<div class="header-button__arrow">
+						<img src={% static "img/icons/arrow.svg"%}>
+					</div>
+				</a>
+				<button class="header-burger" onclick="openMenu()">
+					<span></span>
+				</button>
+            </nav>
+        </header>
+		<div class="adaptive-menu">
+			<div class="menu-item">
+				<div class="menu-item__link">
+					<a href={% url "services"%}>Services</a> <img src={% static "img/icons/vector.svg"%}>
+				</div>
+				{% comment %} <ul class="menu-item__list">
+					
+					<li>
+						<a href="{% url 'services' %}#development" class="anchor__link">Development</a>
+					</li>
+					<li>
+						<a href="{% url 'services' %}#intelligence" class="anchor__link">Artificial Intelligence</a>
+					</li>
+					<li>
+						<a href="{% url 'services' %}#management" class="anchor__link">Projects Management</a>
+					</li>
+					<li>
+						<a href="{% url 'services' %}#analysis" class="anchor__link">Data Analysis</a>
+					</li>
+					<li>
+						<a href="{% url 'services' %}#integration" class="anchor__link">Products Optimization</a>
+					</li>
+				</ul> {% endcomment %}
+			</div>
+			<div class="menu-item">
+				<div class="menu-item__link">
+					<a href={% url "idea"%}>Community Idea</a> <img src={% static "img/icons/vector.svg"%}>
+				</div>
+			</div>
+			<div class="menu-item">
+				<div class="menu-item__link">
+					<a href={% url "career"%}>Clients</a> <img src={% static "img/icons/vector.svg"%}>
+				</div>
+			</div>
+			<div class="menu-item">
+				<div class="menu-item__link">
+					<a href={% url "projects"%}>Portfolio</a> <img src={% static "img/icons/vector.svg"%}>
+				</div>
+			</div>
+			<svg xmlns="http://www.w3.org/2000/svg" width="375" height="103" viewBox="0 0 375 103" fill="none">
+				<g filter="url(#filter0_f_161_1797)">
+				  <path d="M340.391 55.661C397.644 64.9956 369.916 73.5204 355.271 89.4646C340.627 105.409 64.565 106.366 7.31251 97.0315C-49.94 87.6969 95.1103 80.0249 109.755 64.0807C124.4 48.1365 283.139 46.3263 340.391 55.661Z" fill="url(#paint0_linear_161_1797)"/>
+				</g>
+				<defs>
+				  <filter id="filter0_f_161_1797" x="-56" y="0" width="481" height="153" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+					<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+					<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+					<feGaussianBlur stdDeviation="25" result="effect1_foregroundBlur_161_1797"/>
+				  </filter>
+				  <linearGradient id="paint0_linear_161_1797" x1="84.3098" y1="93.0862" x2="103.603" y2="23.346" gradientUnits="userSpaceOnUse">
+					<stop stop-color="#58FFF8"/>
+					<stop offset="0.531732" stop-color="#7AAEFC"/>
+					<stop offset="1" stop-color="#9867FF"/>
+				  </linearGradient>
+				</defs>
+			  </svg>
+	</div>
+</head>
+<div class="popup__window">
+    <div class="prod-tab__remove">
+        <div class="prod-tab__button-remove">
+            <img src={% static "img/button-remove.svg" %} alt="" data-type="popup-remov" />
+        </div>
+    </div>
+    <div class="popup__content">
+		<p class="popup__text">Thank you, and welcome to Elysium, the place where your dreams come true in our nurturing environment!</p>
+        <p class="popup__text">Be sure to download your <a href="#">website optimization guide</a> and take advantage of <a href="#">Elysium's Artificial Intelligence</a> to solve your business needs!</p>
+    </div>
+</div>
+<div class="popup__error">
+    <div class="prod-tab__remove__error">
+        <div class="prod-tab__button-remove__error">
+            <img src={% static "img/button-remove.svg" %} alt="" data-type="popup-remov" />
+        </div>
+    </div>
+    <div class="content__error">
+		<p class="popup__text__error"><p>It looks like your email is already exists in Elysium.</p>
+		<p class="popup__text__error"> If we have not contacted you yet, please send a request to our email at <a href="#">elysium@sheptalin.info.</a></p>
+    </div>
+</div>
+
+{% block content %}{% endblock %}
+
+<footer class="footer">
+    <div class="footer__head footer__container">
+	
+		<div class="cookie__banner" id="cookies_id">
+			<p>Elysium use essential cookies to ensure you get the best experience on our website.</p> <p>By clicking “Accept,” you agree to our website's cookie use as described in our <a href="">Cookie Policy</a>.</p> 
+			<button class="cookies__button accept__button" id="accept_id">Accept</button>
+			<a class="decline__button" id="decline_id">Decline</a>
+		</div>
+		
+        <a class="logo-icon" href="index.html">
+            <div class="main-icon">
+				<img src={% static "img/icons/Elysium.svg"%} alt="#">
+			</div>
+            <span>Artem </br> Sheptalin</span>
+        </a>
+        <ul class="footer__navigation">
+            <li><a href={% url 'services' %}>Services</a></li>
+            <li><a href={% url 'idea' %}>Community Idea</a></li>
+            <li><a href={% url 'career' %}>Clients</a></li>
+            <li><a href={% url 'projects' %}>Portfolio</a></li>
+        </ul>
+        <div class="footer__contact">
+            <img src={% static "img/icons/mail.svg"%}>
+            <a href="mailto:info@agency.com">elysium@sheptalin.info</a>
+        </div>
+    </div>
+    <div class="footer__foot footer__container">
+        <p>© 2024. All rights reserved</p>
+        <div class="social">
+            <a href="#"> <img src={% static "img/icons/Instagram.svg"%} alt="#"> </a>
+            <a href="https://t.me/ArtemSheptalin"> <img src={% static "img/icons/Telegram.svg"%} alt="#"> </a>
+        </div>
+    </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src={% static "js/script.js"%}></script>
+<script src={% static "js/ajax.js"%}></script>
+</body>
+</html>

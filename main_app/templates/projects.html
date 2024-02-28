@@ -1,0 +1,92 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Портфолио{% endblock %}
+{% block content %}
+<section class="news">
+    <div class="container">
+        <h2>Elysium achievements</h2>
+        <div class="news__content content-news">
+            <div class="content-news__tabs" id="button__header">
+
+                <form method="GET" class="form__btn">
+                    <button id="all_filter" class="btn green"  name="development" value="development">Development</button>
+                </form>
+                
+                <form method="GET" class="form__btn">
+                    <button id="development_filter" class="btn white" name="intelligence" value="intelligence">Artificial Intelligence</button>
+                </form>
+
+                <form method="GET" class="form__btn">
+                    <button id="analysis_filter" class="btn purple"  name="analysis" value="analysis">Data Analysis</button>
+                </form> 
+
+                <form method="GET" class="form__btn">
+                    <button id="optimization_filter" class="btn violent" name="optimization" value="optimization">Products Optimization</button>
+                </form>
+                
+            </div>
+            
+            <div class="content-news__news">
+                
+                {% for project in projects %}
+                    {% if projects%}
+                        <div class="news-item">
+                            <a href="#"></a>
+                            <div class="news-item-top">
+                                <img class="news-item-top__image" src={% static "img/images/news/01.png"%}>
+                                <span class="news-item-top__data">
+                                    22.07.2023
+                                </span>
+                                <p class="news-item-top__title">
+                                    {{ project.title }}
+                                </p>
+                            </div>
+                            <div class="news-item-bottom">
+                                <p class="green">{{ project.category }}</p>
+                                <div class="news-item-bottom__arrow"><img src={% static "img/icons/arrow.svg"%}></div>
+                            </div>
+                        </div>
+                    {% else %}
+                    <p>We are diligently working on projects of this category, soon we will share our developments!</p>
+                    {% endif %}
+                {% endfor %}
+                
+            </div>
+            <div class="content-news__pagination news-pagination">
+                {% if page_obj.has_previous %}
+                <div class="news-pagination__arrow">
+                    <a href="?page={{ page_obj.previous_page_number }}" class="right">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 17 16" fill="none">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M9.078 0L17 8.00297L9.08387 16L7.72387 14.6261L13.3151 8.97771L0 8.97234L0.00762667 7.02589L13.3084 7.03125L7.71315 1.3788L9.078 0Z" fill="white"/>
+                        </svg>
+                    </a>
+                </div>
+                {% endif %}
+                
+                {% if page_obj.paginator.num_pages > 1 %}
+                    <ul class="news-pagination__pages">
+                        {% for num in page_obj.paginator.page_range %}
+                            <li {% if page_obj.number == num %}class="active"{% endif %}>
+                                <a href="?page={{ num }}">
+                                    <span>{{ num }}</span>
+                                </a>
+                            </li>
+                        {% endfor %}
+                    </ul>
+                {% endif %}
+
+
+                {% if page_obj.has_next %}
+                <div class="news-pagination__arrow">
+                    <a href="?page={{ page_obj.next_page_number }}">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 17 16" fill="none">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M9.078 0L17 8.00297L9.08387 16L7.72387 14.6261L13.3151 8.97771L0 8.97234L0.00762667 7.02589L13.3084 7.03125L7.71315 1.3788L9.078 0Z" fill="white"/>
+                        </svg>
+                    </a>
+                </div>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

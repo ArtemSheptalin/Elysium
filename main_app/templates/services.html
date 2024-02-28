@@ -1,0 +1,472 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load widget_tweaks %}
+{% block title %}Услуги{% endblock %}
+{% block content %}
+<section class="services" style="margin-top: 40px;">
+    <div class="container">
+        <h1>We possesses enough  <br><span>to address your needs</span></br></h1>
+        <div class="services__row ability">
+            <div class="ability-item">
+                <div class="ability-item__image">
+                    <img src={% static "img/icons/ability/01.svg"%}>
+                </div>
+                <p>Development <br>
+                    and maintaining</p> 
+            </div>
+            <div class="ability-item">
+                <div class="ability-item__image">
+                    <img src={% static "img/icons/ability/02.svg"%}>
+                </div>
+                <p>Artificial <br>
+                    Intelligence</p> 
+            </div>
+            <div class="ability-item">
+                <div class="ability-item__image">
+                    <img src={% static "img/icons/ability/03.svg"%}>
+                </div>
+                <p>Projects <br> Management</p> 
+            </div>
+            <div class="ability-item">
+                <div class="ability-item__image">
+                    <img src={% static "img/icons/ability/04.svg"%}>
+                </div>
+                <p>Data <br> Analysis</p> 
+            </div>
+            <div class="ability-item">
+                <div class="ability-item__image">
+                    <img src={% static "img/icons/ability/05.svg"%}>
+                </div>
+                <p>Products <br>Optimization</p> 
+            </div>
+        </div>
+    </div>
+    <svg xmlns="http://www.w3.org/2000/svg" width="188" height="283" viewBox="0 0 188 283" fill="none">
+        <g filter="url(#filter0_f_161_2484)">
+          <path d="M245.311 121.959C311.488 154.113 374.127 131.015 357.2 185.935C340.272 240.855 139.589 244.854 73.4121 212.701C7.23494 180.547 100.623 124.418 117.551 69.4977C134.479 14.5777 179.134 89.806 245.311 121.959Z" fill="url(#paint0_linear_161_2484)"/>
+        </g>
+        <defs>
+          <filter id="filter0_f_161_2484" x="0" y="0" width="410" height="283" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+            <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+            <feGaussianBlur stdDeviation="25" result="effect1_foregroundBlur_161_2484"/>
+          </filter>
+          <linearGradient id="paint0_linear_161_2484" x1="44" y1="198.41" x2="170.928" y2="44.4428" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#58FFF8"/>
+            <stop offset="0.531732" stop-color="#7AAEFC"/>
+            <stop offset="1" stop-color="#9867FF"/>
+          </linearGradient>
+        </defs>
+      </svg>
+</section>
+<section class="stages" id="development">
+    <div class="container">
+        <div class="stages__first stage">
+            <div class="stage__title-column">
+                <span>/01</span>
+                <h3>Development</h3>
+            </div>
+            <div class="stage__info-column">
+                <p>
+                    <span>Elysium</span> offers development services tailored to various business domains, encompassing web, desktop, and mobile applications.
+                </p> 
+                <p>
+                    We provide end-to-end development services, starting from requirements analysis and design to development, testing, deployment, and support. Additionally, we offer project management consultations and assistance.
+                </p>
+            </div>
+            <div class="stage__name-column">
+                <p>
+                    Our<br>
+                    capabilities:
+                </p> 
+            </div>
+            <div class="stage__content-column">
+                <div class="way">
+                    <div class="way-item active">
+                        Frontend-
+                        development
+                    </div>
+                    <div class="way-item">
+                        Backend-
+                        development
+                    </div>
+                    <div class="way-item">
+                        IOS/Android- development
+                    </div>
+                    <div class="way-item">
+                        DevOps-
+                        engineers
+                    </div>
+                </div>
+                <div class="way-tabs">
+                    <p class="way-tabs__item show">
+                        <span>Frontend</span> — is the part of an application responsible for displaying data and interacting with the user. It includes all visual effects, buttons, and animations on the website, meticulously crafted by our frontend specialists. This encompasses everything related to the user's interaction with the service, ensuring a seamless and captivating experience for your clients.
+                    </p>
+                    <p class="way-tabs__item">
+                        <span>Backend</span> — is the part of an application responsible for storing and organizing data, ensuring everything on the client-side actually works.
+
+                        The backend communicates with the frontend, sending and receiving information to be displayed as a web page. At Elysium, we ensure seamless operations for every product. 
+                    </p>
+                    <p class="way-tabs__item">
+                        <span>Mobile development</span> — is the process of making software for smartphones, tablets and digital assistants, most commonly for the iOS and Android operating systems. The software can be preinstalled on the device, downloaded from a mobile app store or accessed through a mobile web browser. An ideal option for compact and comfortable access to your business.
+                    </p>
+                    <p class="way-tabs__item">
+                        <span>DevOps</span> — is a set of practices that combines software development (Dev) and IT operations (Ops) to improve collaboration and communication between development and operations teams. The goal of DevOps is to streamline the software development lifecycle, automate processes, and deliver high-quality application more efficiently and quickly. With DevOps Elysium provides you with faster, more reliable, and higher-quality software products and services.
+                    </p>
+                </div>
+                <div class="accordions">
+                    <div class="accordion">
+                        <button class="accordion__control" aria-expanded="false">
+                            <p>Frontend development</p>
+                            <i>
+                                <span><img src={% static "img/icons/arrow.svg"%}></span>
+                            </i>
+                        </button>
+                        <div class="accordion__content" aria-hidden="true">
+                            <p>
+                                <span>Frontend</span> — is the part of an application responsible for displaying data and interacting with the user. It includes all visual effects, buttons, and animations on the website, meticulously crafted by our frontend specialists. This encompasses everything related to the user's interaction with the service, ensuring a seamless and captivating experience for your clients.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="accordion">
+                        <button class="accordion__control" aria-expanded="false">
+                            <p>Backend development</p>
+                            <i>
+                                <span><img src={% static "img/icons/arrow.svg"%}></span>
+                            </i>
+                        </button>
+                        <div class="accordion__content" aria-hidden="true">
+                            <p>
+                                <span>Backend</span> — is the part of an application responsible for storing and organizing data, ensuring everything on the client-side actually works.
+
+                                The backend communicates with the frontend, sending and receiving information to be displayed as a web page. At Elysium, we ensure seamless operations for every product.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="accordion">
+                        <button class="accordion__control" aria-expanded="false">
+                            <p>IOS/Android- development</p>
+                            <i>
+                                <span><img src={% static "img/icons/arrow.svg"%}></span>
+                            </i>
+                        </button>
+                        <div class="accordion__content" aria-hidden="true">
+                            <p>
+                                <span>Mobile development</span> — is the process of making software for smartphones, tablets and digital assistants, most commonly for the iOS and Android operating systems. The software can be preinstalled on the device, downloaded from a mobile app store or accessed through a mobile web browser. An ideal option for compact and comfortable access to your business.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="accordion">
+                        <button class="accordion__control" aria-expanded="false">
+                            <p>DevOps engineering</p>
+                            <i>
+                                <span><img src={% static "img/icons/arrow.svg"%}></span>
+                            </i>
+                        </button>
+                        <div class="accordion__content" aria-hidden="true">
+                            <p>
+                                <span>DevOps</span> — is a set of practices that combines software development (Dev) and IT operations (Ops) to improve collaboration and communication between development and operations teams. The goal of DevOps is to streamline the software development lifecycle, automate processes, and deliver high-quality application more efficiently and quickly. With DevOps Elysium provides you with faster, more reliable, and higher-quality software products and services.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="stages__second stage"   id="intelligence">
+            <div class="stage__title-column">
+                <span>/02</span>
+                <h3>Artificial
+                    Intelligence</h3>
+            </div>
+            <div class="stage__info-column">
+                <p>Artificial Intelligence is an excellent and efficient solution for rapidly evolving businesses.</p>
+
+                <p>
+                    <span>Elysium</span> possesses numerous capabilities that can aid you in various spheres of life and business.
+
+                </p>
+            </div>
+            <div class="stage__name-column">
+                <p>
+                    Let us automate your work with:
+                </p> 
+            </div>
+            <div class="stage__content-column">
+                <div class="power">
+                    <div class="power-item">
+                        <img src={% static "img/icons/power/01.svg"%}>
+                        <p class="power-item__title">Machine Learning</p>
+                        <p class="power-item__text">
+                            AI can be trained on vast amounts of data and utilize this knowledge to solve various types of tasks.</p>
+                    </div>
+                    <div class="power-item">
+                        <img src={% static "img/icons/power/02.svg"%}>
+                        <p class="power-item__title">Image Recognition</p>
+                        <p class="power-item__text">AI can recognize images and objects in photos and videos, which can be beneficial in fields such as medicine, manufacturing, and security.</p>
+                    </div>
+                    <div class="power-item">
+                        <img src={% static "img/icons/power/03.svg"%}>
+                        <p class="power-item__title"> Business Process Automation</p>
+                        <p class="power-item__text">AI can automate routine tasks, such as document processing, inventory management, and more.</p>
+                    </div>
+                    <div class="power-item">
+                        <img src={% static "img/icons/power/04.svg"%}>
+                        <p class="power-item__title">Big Data Analysis</p>
+                        <p class="power-item__text">AI can analyze large volumes of data, extracting essential information that can help companies make more effective decisions.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="stages__three stage" id="management">
+            <div class="stage__title-column">
+                <span>/03</span>
+                <h3>Projects Management</h3>
+            </div>
+            <div class="stage__info-column">
+                <p>Our community comprises highly experienced professionals capable of ensuring effective project coordination and management, allowing you to focus on your core activities.</p>
+                
+                <p>
+                    Furthermore, we provide access to tools and technologies that can enhance project productivity and efficiency, potentially leading to time and cost savings of your company.
+                </p>
+            </div>
+            <div class="stage__name-column">
+                <p>
+                    We're responsible:
+                </p> 
+            </div>
+            <div class="stage__content-column">
+                <div class="respons">
+                    <div class="respons__item">
+                        1. Pinpoint the issue
+                    </div>
+                    <div class="respons__item">
+                        2. Troubleshooting
+                    </div>
+                    <div class="respons__item big">
+                        3. Providing results that matter to you
+                    </div>
+                </div>
+            </div>
+            <p class="stage__title">
+                Boost your personal results <br> <span> with Elysium community </span>
+            </p>
+        </div>
+        <div class="stages__four stage" id="analysis">
+            <div class="stage__title-column">
+                <span>/04</span>
+                <h3>Data <br> Analysis</h3>
+            </div>
+            <div class="stage__info-column">
+                <p>We provide data analysis services to help you make informed business decisions based on the information obtained.</p>
+
+                <p>Data analysis allows for the identification of trends, patterns, and correlations in large volumes of information, which can help you identify potential problems and opportunities to improve business processes.</p>
+            </div>
+            <div class="stage__name-column">
+                <p>
+                    Technique:
+                </p> 
+            </div>
+            <div class="stage__content-column">
+                <div class="steps">
+                    <div class="steps-head">
+                        <div class="step">
+                            <p>Data collection<br> and cleaning</p>
+                            <img src={% static "img/icons/steps/01.png"%}>
+                        </div>
+                        <div class="step">
+                            <p>Data exploration <br> and analysis</p>
+                            <img src={% static "img/icons/steps/02.png"%}>
+                        </div>
+                        <div class="step steps-head__middle">
+                            <p>Interpretation and <br> communication</p>
+                            <img src={% static "img/icons/steps/03.png"%}>
+                        </div>
+                    </div>
+                    <div class="steps-foot">
+                        <div class="step">
+                            <p>Preparing <br> recommendations</p>
+                            <img src={% static "img/icons/steps/05.png"%}>
+                        </div>
+                        <div class="step">
+                            <p>Data analysis</p>
+                            <img src={% static "img/icons/steps/04.png"%}>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="stages__five stage" id="integration">
+            <div class="stage__title-column">
+                <span>/05</span>
+                <h3>Products Optimization</h3>
+            </div>
+            <div class="stage__info-column">
+                <p>Our team also assists you in products optimization to ensure smooth operation within the company, leading to enhanced efficiency and productivity, minimized errors, and improved work quality. Relax now; let the progress work on you. </p>
+            </div>
+            <div class="stage__name-column">
+                <p>
+                    Witness the benefits now:
+                </p> 
+            </div>
+            <div class="stage__content-column">
+                <div class="power">
+                    <div class="power-item">
+                        <img src={% static "img/icons/power/05.svg"%}>
+                        <p class="power-item__title">Expenses reducing</p>
+                        <p class="power-item__text">Our experience and expertise in this field enable us to make operations faster and more effectively, leading to improved productivity.</p>
+                    </div>
+                    <div class="power-item">
+                        <img src={% static "img/icons/power/06.svg"%}>
+                        <p class="power-item__title">Improving systems capacity</p>
+                        <p class="power-item__text">Results of products optimization are expressed in automation of routine tasks, increasing productivity and reducing errors.</p>
+                    </div>
+                    <div class="power-item">
+                        <img src={% static "img/icons/power/07.svg"%}>
+                        <p class="power-item__title">Quality rising</p>
+                        <p class="power-item__text">Optimized products typically operate more accurately, leading to improved work quality and buisness results.</p>
+                    </div>
+                    <div class="power-item">
+                        <img src={% static "img/icons/power/08.svg"%}>
+                        <p class="power-item__title">Opportunities extension</p>
+                        <p class="power-item__text">Furthermore, optimization helps companies expand the capabilities and functionality of their systems and applications, enhancing their competitiveness.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="phase">
+    <div class="container">
+        <h2>Milestones</h2>
+        <ul class="phase__row">
+            <li class="phase-item active">
+                <div class="phase-item__image">
+                    <img src={% static "img/icons/steps/1.svg"%}>
+                </div>
+                <p>Pinpoint the issue</p>
+            </li>
+            <li class="phase-item">
+                <div class="phase-item__image">
+                    <img src={% static "img/icons/steps/2.svg"%}>
+                </div>
+                <p>Analysis</p>
+            </li>
+            <li class="phase-item">
+                <div class="phase-item__image">
+                    <img src={% static "img/icons/steps/3.svg"%}>
+                </div>
+                <p>Goal-setting with you</p>
+            </li>
+            <li class="phase-item">
+                <div class="phase-item__image">
+                    <img src={% static "img/icons/steps/4.svg"%}>
+                </div>
+                <p>Development</p>
+            </li>
+            <li class="phase-item">
+                <div class="phase-item__image">
+                    <img src={% static "img/icons/steps/5.svg"%}>
+                </div>
+                <p>Tests</p>
+            </li>
+            <li class="phase-item">
+                <div class="phase-item__image">
+                    <img src={% static "img/icons/steps/6.svg"%}>
+                </div>
+                <p>Releasing</p>
+            </li>
+            <li class="phase-item">
+                <div class="phase-item__image">
+                    <img src={% static "img/icons/steps/7.svg"%}>
+                </div>
+                <p>Maintaining</p>
+            </li>
+        </ul>
+        <div class="phase-content">
+            <div class="phase-content__item show">
+                <span>1. </span>
+                <p>Identify or locate the specific problem or difficulty that needs to be addressed. Finding the exact cause or source of a problem.</p>
+            </div>
+            <div class="phase-content__item">
+                <span>2. </span>
+                <p>The process of examining, understanding, and interpreting information in order to gain insights, identify patterns, and make informed decisions.</p>
+            </div>
+            <div class="phase-content__item">
+                <span>3. </span>
+                <p>Refers to clearly stating the objectives or intentions behind a particular action, decision, or project.</p>
+            </div>
+            <div class="phase-content__item">
+                <span>4.</span>
+                <p>Phase where software is designed, coded and created.</p>
+            </div>
+            <div class="phase-content__item">
+                <span>5. </span>
+                <p>Software is tested rigorously to identify and fix any bugs or errors.</p>
+            </div>
+            <div class="phase-content__item">
+                <span>6. </span>
+                <p>Refers to the process of making the project's deliverables available to its intended users or customers. This involves deploying the software or system to a production environment, making it accessible for use by the end-users.</p>
+            </div>
+            <div class="phase-content__item">
+                <span>7. </span>
+                <p>Software maintenance may include activities such as adding new features or enhancements, optimizing performance, and providing technical support to final users.</p>
+            </div>
+        </div>
+    </div>
+    <svg xmlns="http://www.w3.org/2000/svg" width="1496" height="625" viewBox="0 0 1496 625" fill="none">
+        <g filter="url(#filter0_f_161_1234)">
+          <path d="M993.63 200C1254.12 200 1296 206.773 1296 267.266C1296 327.759 613.178 425 352.691 425C92.2033 425 215.074 344.089 352.691 267.266C504.317 233.621 733.142 200 993.63 200Z" fill="url(#paint0_linear_161_1234)"/>
+        </g>
+        <defs>
+          <filter id="filter0_f_161_1234" x="0" y="0" width="1496" height="625" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+            <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+            <feGaussianBlur stdDeviation="100" result="effect1_foregroundBlur_161_1234"/>
+          </filter>
+          <linearGradient id="paint0_linear_161_1234" x1="236.919" y1="425" x2="253.978" y2="199.156" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#58FFF8"/>
+            <stop offset="0.531732" stop-color="#7AAEFC"/>
+            <stop offset="1" stop-color="#9867FF"/>
+          </linearGradient>
+        </defs>
+      </svg>
+</section>
+<section class="form-one" style="margin-top:0px;">
+    <div class="form-one__row container">
+        <div class="information-column">
+            <div class="information-column__header">
+                <h2 id="info__header">Let us help you, <br>
+                    tell your worries?</h2>
+                <p id="info__paragraph">Sign up for a FREE consultation and receive site optimization instructions powered by our BEST specialists.</p>
+                <p>If we won't resolve your issue - you owe us nothing.</p>
+            </div>
+            <div class="information-column__footer">
+                <div class="social">
+                    <a href="#"> <img src={% static "img/icons/Instagram.svg"%} alt="#"> </a>
+                    <a href="https://t.me/ArtemSheptalin"> <img src={% static "img/icons/Telegram.svg"%} alt="#"> </a>
+                </div>
+            </div>
+        </div>
+        <form class="form-column" method='POST' id="services__form">
+            {% csrf_token %} 
+            {{ form.first_name | add_class:"form-column" }}
+            <div id="first_name_error"></div>
+            {{ form.email | add_class:"form-column" }}
+            <div id="email_error"></div>
+            {{ form.message | add_class:"form-column" }}
+            <div id="message_error"></div>
+            <div class="form-column__footer">
+                <button class="g-anim-button" type="submit" id="form_btn">
+                    <span>Share my anxiety</span>
+                    <img src={% static "img/icons/arrow-right.svg"%}>
+                </button>
+                <p>By clicking the button, you agree
+                    <a href="#">with the privacy policy of Elysium.</a></p>
+            </div>
+        </form>
+    </div>
+    
+</section>
+<script src={% static "js/services.js"%}></script>
+{% endblock %}

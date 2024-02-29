@@ -3552,7 +3552,7 @@ footer {
   }
 }
 .career__image {
-  margin-top: 96px;
+  margin-top: 103px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -5697,5 +5697,5 @@ footer {
 
 .footer__contact a:hover {
   text-decoration: underline;
-  
 }
+

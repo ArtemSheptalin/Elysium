@@ -1937,7 +1937,7 @@ footer {
 }
 
 .form-one {
-  margin-top: 164px;
+  margin-top: 114px;
   position: relative;
 }
 @media (max-width: 1300px) {
@@ -5684,6 +5684,10 @@ footer {
   backdrop-filter: blur(7px);
 }
 
+.content__offer a.offer__button {
+  text-decoration: none;
+}
+
 .consultate__button {
   background: linear-gradient(#090909 0 0) padding-box, linear-gradient(105deg, #58FFF8, #8593FD, #9867FF) border-box;
   border: 1.5px solid transparent;
@@ -5699,3 +5703,51 @@ footer {
   text-decoration: underline;
 }
 
+.text-founder__text.about-company a {
+  text-decoration: underline;
+}
+
+
+
+.text-founder__text.about-company a:hover {
+  text-decoration: none;
+}
+
+.work-info a {
+  text-decoration: underline;
+}
+
+.work-info a:hover {
+  text-decoration: none;
+}
+
+.about__row.about-elysium a {
+  text-decoration: underline;
+}
+
+.about__row.about-elysium a:hover {
+  text-decoration: none;
+}
+
+.information-column__footer__career {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 106px;
+}
+
+.social__idea {
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.idea__perfomance {
+  border-top: 1px solid rgba(255, 255, 255, 0.4); 
+
+}

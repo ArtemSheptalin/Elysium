@@ -1235,46 +1235,6 @@ footer {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.welcome__spot {
-  position: absolute;
-  bottom: 175px;
-  left: 0;
-  -webkit-filter: blur(15px);
-          filter: blur(15px);
-}
-@media (max-width: 1020px) {
-  .welcome__spot {
-    bottom: 0;
-  }
-}
-@media (max-width: 720px) {
-  .welcome__spot {
-    -webkit-filter: blur(6px);
-            filter: blur(6px);
-    fill: linear-gradient(54deg, #58FFF8 6.76%, #7AAEFC 38.11%, #9867FF 65.73%);
-  }
-}
-@media (max-width: 1300px) {
-  .welcome__spot svg {
-    max-width: 700px;
-  }
-}
-@media (max-width: 1020px) {
-  .welcome__spot svg {
-    max-width: 580px;
-  }
-}
-@media (max-width: 720px) {
-  .welcome__spot svg {
-    max-width: 450px;
-  }
-}
-@media (max-width: 520px) {
-  .welcome__spot svg {
-    max-height: 550px;
-    max-width: 310px;
-  }
-}
 
 .running-row {
   margin-top: 273px;
@@ -5621,20 +5581,34 @@ footer {
 .offer__popup {
   position: fixed;
   display: none;
-  top: 0;
-  left: 0;
-  right: 0;
-  padding: 50px 20px;
+  top: 15%;  
+  left: 15%; 
+  right: 15%;  
+  bottom: 15%; 
+  padding: 20px;
   text-align: center;
   background-color: rgba(27, 27, 27, 0.9);
   backdrop-filter: blur(7px);
   border: 1.5px solid transparent;
   transition: opacity 0.5s, visibility 0.5s; 
-  border-radius: 5px;
+  border-radius: 16px;
   z-index: 1000;
-  max-height: 90%;
-  overflow-x: hidden;
-  overflow-y: auto;
+  overflow: hidden;
+}
+
+.content__header {
+  font-size: 26px;
+  text-align: center;
+}
+
+.content__text {
+  text-align: center;
+  padding: 50px;
+}
+
+.content__paragraphs {
+  margin-top: 20px;
+  padding: 10px;
 }
 
 .offer__popup.hidden {
@@ -5644,6 +5618,14 @@ footer {
 
 .content__offer p {
   padding: 5px;
+}
+
+.popup__text__offer a {
+  text-decoration: underline;
+}
+
+.popup__text__offer a:hover {
+  text-decoration: none;
 }
 
 .content__offer a {
@@ -5707,6 +5689,8 @@ footer {
   text-decoration: underline;
 }
 
+.welcome__spot
+
 
 
 .text-founder__text.about-company a:hover {
@@ -5751,3 +5735,4 @@ footer {
   border-top: 1px solid rgba(255, 255, 255, 0.4); 
 
 }
+

@@ -4,43 +4,10 @@ const objectHeader = document.querySelector('.header')
 let accept_btn = document.querySelector('#accept_id');
 let decline_btn = document.querySelector('#decline_id');
 let modal = document.querySelector('.cookie__banner');
-let popup_offer= document.querySelector('.offer__popup');
-let popup_button_offer = document.querySelector('.prod-tab__button-remove__offer');
-let offer_consultateBtn = document.querySelector('#offerBtn__id');
 const formElement = document.querySelector('#connection_form');
 
 
-// Модальное окно специального предложения
 
-function checkedOffer() { 
-	if (!sessionStorage.getItem('offerClosed'))  { 
-	  showOffer(); 
-	} 
-}
-
-function showOffer() {
-	popup_offer.style.display = 'block';
-}
-
-checkedOffer();
-
-function hideOffer() {
-	popup_offer.style.opacity = '0';
-	popup_offer.style.pointerEvents = 'none';
-	setTimeout(() => {
-		popup_offer.style.display = 'none';
-	}, 500);
-	sessionStorage.setItem('offerClosed', 'true');
-}
-
-popup_button_offer.addEventListener('click', () => {
-	hideOffer();
-});  
-
-offer_consultateBtn.addEventListener('click', ()=> {
-	hideOffer();
-	formElement.scrollIntoView({ behavior: 'smooth' });
-})
 
 // Модальное окно Cookies
 

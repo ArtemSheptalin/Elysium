@@ -10,4 +10,5 @@ urlpatterns = [
     path('main-page-form-complete/', main_ajax, name='main_page_ajax'),
     path('services-form-complete/', services_ajax, name='services_ajax'),
     path('career-form-complete/', career_ajax, name='career_ajax'),
+    path('idea-form-complete/', idea_ajax, name="idea_ajax"),
 ]

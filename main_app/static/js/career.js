@@ -15,8 +15,6 @@ document.addEventListener('DOMContentLoaded', () => {
 	let email_error = false;
 	let message_error = false;
 
-	console.log(form_btn);
-
 	function validateForm() {
 		if (first_name.value === '' || email.value === '' || message.value === '' || name_error || email_error || message_error) {
 			form_btn.disabled = true;

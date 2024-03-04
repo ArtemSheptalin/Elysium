@@ -5685,15 +5685,12 @@ footer {
   text-decoration: underline;
 }
 
-.text-founder__text.about-company a {
+.bottomOffer__a {
   text-decoration: underline;
+  font-size: 46px;
 }
 
-.welcome__spot
-
-
-
-.text-founder__text.about-company a:hover {
+.bottomOffer__a:hover {
   text-decoration: none;
 }
 

@@ -1,5 +1,6 @@
 {% extends 'base.html' %}
 {% load static %}
+{% load widget_tweaks %}
 {% block title %}Идея Elysium{% endblock %}
 {% block content %}
 <section class="idea-preview">
@@ -37,15 +38,15 @@
             <p class="text-founder__subtitle">Founder and CEO of Elysium</p>
             <h2>Artem Sheptalin</h2>
             <div class="text-founder__text about-company">
-                <p>Do your organization’s managers spend an inordinate amount of time debating the accuracy of demands and costs being provided to support IT decisions? Or you have observed a lack of skilled specialists who can provide top-notch IT solutions? Or you're concerned about the complexities associated with modern IT technologies?</p>
+                <p>Does your business enable you to effectively manage your life rather than constantly consuming your time? Do your organization’s managers spend an inordinate amount of time debating the accuracy of demands and costs being provided to support IT decisions? Or you have observed a lack of skilled specialists who can provide top-notch IT solutions which save your time and money?</p>
                 
                 <p>
-                    Congratulations! You've come to the right place. We’re here to assist you in navigating through challenges, finding solutions, saving your time, and ensuring that your technology operates smoothly and efficiently.
-                    <br>I am Artem Sheptalin, a Fullstack Developer with 6 years of deep IT practice, and I definitely have what to say and what to share with YOU.
+                    Congratulations! You've come to the right place. We’re here to assist you in navigating through challenges, finding solutions, leading to your business blossoming, and ensuring that your technology operates smoothly and efficiently.
+                    <br>
                 </p>
                 <p>You deserve more than you have. Let us help you to prosper with IT technologies.</p>
                 
-                <p>Click the link below to receive a FREE<a href="{% url 'main_page' %}#connection_form"> consultation with my BEST IT Business Expert and get your Web Site Optimization Instructions</a> powered by my BEST specialists.</p>
+                <p>Click the link below to receive a FREE<a style="text-decoration: underline;"  onmouseover="this.style.textDecoration='none'" onmouseout="this.style.textDecoration='underline'" href="{% url 'main_page' %}#connection_form"> consultation with my BEST IT Business Expert and get your Web Site Optimization Instructions</a> powered by my BEST specialists.</p>
                 <div class="about-company__img">
                     <svg xmlns="http://www.w3.org/2000/svg" width="88" height="88" viewBox="0 0 88 88" fill="none">
                         <path d="M50.2856 6.28564V44H75.4285C75.4285 57.8635 64.1491 69.1428 50.2856 69.1428V81.7143C71.0826 81.7143 88 64.7969 88 44V6.28564H50.2856Z" fill="#151515"/>
@@ -69,7 +70,7 @@
         <div class="target-slogan">
             <img src={% static "img/icons/target.png"%}>
             <div class="target-slogan__text">
-                We’re ready to help you.
+                What does that mean for you?
             </div>
         </div>
         <div class="target-character">
@@ -188,29 +189,65 @@
         </div>
     </div>
 </section>
-<section class="perfomance idea__perfomance">
-    <div class="container">
-      <h2>
-        <span>Let's Get Social</span>
-      </h2>
-      <p>
-        Follow us on Facebook and Telegram to stay in touch, and get the latest updates, news and messages as we continue to share the best IT practices and strategies that work for our clients, in hopes that it can help you succeed as well.
-      </p>
-      <div class="information-column">
-        <div class="information-column__footer">
-            <div class="social social__idea">
-                <a href="https://www.instagram.com/nnhufg?igsh=c2tiMDVtaHJ6d3My&utm_source=qr"> <img src={% static "img/icons/Instagram.svg"%} alt="#"> </a>
-                <a href="https://t.me/ArtemSheptalin"> <img src={% static "img/icons/Telegram.svg"%} alt="#"> </a>
+
+
+
+<section class="form-one">
+    <div class="form-one__row container">
+        <div class="information-column">
+            <div class="information-column__header">
+                <h2 id="info__header">Let us help you, <br>
+                    tell your worries?</h2>
+                <p id="info__paragraph">Sign up for a FREE consultation with IT Business Expert and receive Web Site Optimization Instructions powered by our BEST specialists.</p>
+                <p>And if we don't find a solution - you owe us nothing</p>
+
+            </div>
+            <div class="information-column__footer">
+                <div class="social">
+                    <a href="https://www.instagram.com/nnhufg?igsh=c2tiMDVtaHJ6d3My&utm_source=qr"> <img src={% static "img/icons/Instagram.svg"%} alt="#"> </a>
+                    <a href="https://t.me/ArtemSheptalin"> <img src={% static "img/icons/Telegram.svg"%} alt="#"> </a>
+                </div>
             </div>
         </div>
+
+
+        <form class="form-column" method='POST' id="idea__form">
+            {% csrf_token %} 
+            {{ form.first_name | add_class:"form-column" }}
+            <div id="first_name_error"></div>
+            {{ form.email | add_class:"form-column" }}
+            <div id="email_error"></div>
+            {{ form.message | add_class:"form-column" }}
+            <div id="message_error"></div>
+            <div class="form-column__footer">
+                <button class="g-anim-button" type="submit" id="form_btn">
+                    <span>Share my anxiety</span>
+                    <img src={% static "img/icons/arrow-right.svg"%}>
+                </button>
+                <p>By clicking the button, you agree
+                    <a href="#">with the privacy policy of Elysium.</a></p>
+            </div>
+        </form>
+
+
     </div>
-      <img class="perfomance__img01 perfomance__img" src={% static "img/images/perfomance/01.png"%}>
-      <img class="perfomance__img02 perfomance__img" src={% static "img/images/perfomance/02.png"%}>
-      <img class="perfomance__img03 perfomance__img" src={% static "img/images/perfomance/03.png"%}>
-      <img class="perfomance__img04 perfomance__img" src={% static "img/images/perfomance/04.png"%}>
-      <img class="perfomance__img05 perfomance__img" src={% static "img/images/perfomance/05.png"%}>
-      <img class="perfomance__img06 perfomance__img" src={% static "img/images/perfomance/06.png"%}>
-    </div>
-    
-  </section>
+    <svg xmlns="http://www.w3.org/2000/svg" width="1876" height="1052" viewBox="0 0 1876 1052" fill="none">
+        <g filter="url(#filter0_f_161_1141)">
+          <path d="M1281.46 437.933C1564.65 547.525 1605.05 578.42 1559.17 696.976C1513.29 815.531 697.197 718.832 414.001 609.24C130.806 499.648 325.753 392.769 533.631 300.108C723.991 297.962 998.263 328.341 1281.46 437.933Z" fill="url(#paint0_linear_161_1141)"/>
+        </g>
+        <defs>
+          <filter id="filter0_f_161_1141" x="-27.6538" y="0.00354004" width="1902.91" height="1051.3" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+            <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+            <feGaussianBlur stdDeviation="150" result="effect1_foregroundBlur_161_1141"/>
+          </filter>
+          <linearGradient id="paint0_linear_161_1141" x1="288.137" y1="560.532" x2="516.773" y2="146.522" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#58FFF8"/>
+            <stop offset="0.531732" stop-color="#7AAEFC"/>
+            <stop offset="1" stop-color="#9867FF"/>
+          </linearGradient>
+        </defs>
+    </svg>
+</section>
+<script src={% static "js/idea.js"%}></script>
 {% endblock %}

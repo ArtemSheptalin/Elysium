@@ -33,8 +33,27 @@ def main_ajax(request):
                 return JsonResponse({'success': False, 'error': 'An error occurred'})  
 
 
-class IdeaView(TemplateView):
+class IdeaView(CreateView):
+    model = QuestionModel
+    form_class = MainForm
     template_name = 'idea.html'
+
+
+def idea_ajax(request):
+        
+    if request.method == 'POST':
+        first_name = request.POST.get('first_name')  
+        email = request.POST.get('email')
+        message = request.POST.get('message')
+
+        try:
+            QuestionModel.objects.create(first_name=first_name, email=email, message=message)
+            return JsonResponse({'success': True})
+        except IntegrityError as e:
+            if 'unique constraint' in str(e):
+                return JsonResponse({'success': False, 'error': 'Email already exists'})
+            else:
+                return JsonResponse({'success': False, 'error': 'An error occurred'})  
 
 
 class ServicesView(CreateView):

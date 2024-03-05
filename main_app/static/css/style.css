@@ -3127,9 +3127,13 @@ footer {
   }
 }
 .phase h2 {
-  font-size: 64px;
+  font-size: 56px;
   font-weight: 600;
   text-align: center;
+}
+
+.phase h2 span {
+  color: #9867FF;
 }
 @media (max-width: 1020px) {
   .phase h2 {
@@ -5737,4 +5741,3 @@ footer {
 .lack__projects {
   color: #C8DEFF;
 }
-

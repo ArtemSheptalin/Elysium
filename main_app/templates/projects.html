@@ -9,7 +9,7 @@
             <div class="content-news__tabs" id="button__header">
 
                 <form method="GET" class="form__btn">
-                    <button id="all_filter" class="btn green"  name="development" value="development">Development</button>
+                    <button id="all_filter" class="btn white"  name="development" value="development">Development</button>
                 </form>
                 
                 <form method="GET" class="form__btn">
@@ -17,42 +17,45 @@
                 </form>
 
                 <form method="GET" class="form__btn">
-                    <button id="analysis_filter" class="btn purple"  name="analysis" value="analysis">Data Analysis</button>
+                    <button id="analysis_filter" class="btn white"  name="analysis" value="analysis">Data Analysis</button>
                 </form> 
 
                 <form method="GET" class="form__btn">
-                    <button id="optimization_filter" class="btn violent" name="optimization" value="optimization">Products Optimization</button>
+                    <button id="optimization_filter" class="btn white" name="optimization" value="optimization">Products Optimization</button>
                 </form>
                 
             </div>
             
-            <div class="content-news__news">
+            <div class="content-news__news">                
                 
-                {% for project in projects %}
-                    {% if projects%}
+                
+                {% if projects == '' %}
+                    <p class="lack__projects">We are diligently working on projects of this category, soon we will share our developments!</p>
+                        
+                {% else %}
+                    {% for project in projects %}
                         <div class="news-item">
-                            <a href="#"></a>
-                            <div class="news-item-top">
-                                <img class="news-item-top__image" src={% static "img/images/news/01.png"%}>
-                                <span class="news-item-top__data">
-                                    22.07.2023
-                                </span>
-                                <p class="news-item-top__title">
-                                    {{ project.title }}
-                                </p>
+                                <a href=""></a>
+                                <div class="news-item-top">
+                                    <img class="news-item-top__image" src={% static "img/images/autophoto.png"%}>
+                                    <span class="news-item-top__data">
+                                        05.03.2024
+                                    </span>
+                                    <p class="news-item-top__title">
+                                        {{ project.title }}
+                                    </p>
+                                </div>
+                                <div class="news-item-bottom">
+                                    <p class="white">{{ project.category }}</p>
+                                    <div class="news-item-bottom__arrow"><img src={% static "img/icons/arrow.svg"%}></div>
+                                </div>
                             </div>
-                            <div class="news-item-bottom">
-                                <p class="green">{{ project.category }}</p>
-                                <div class="news-item-bottom__arrow"><img src={% static "img/icons/arrow.svg"%}></div>
-                            </div>
-                        </div>
-                    {% else %}
-                    <p>We are diligently working on projects of this category, soon we will share our developments!</p>
-                    {% endif %}
-                {% endfor %}
+                    {% endfor %}      
+                {% endif %}
+                
                 
             </div>
-            <section class="perfomance idea__perfomance">
+            {% comment %} <section class="perfomance idea__perfomance">
                 <div class="container">
                   <h2>
                     <span>Let's Get Social</span>
@@ -76,7 +79,7 @@
                   <img class="perfomance__img06 perfomance__img" src={% static "img/images/perfomance/06.png"%}>
                 </div>
                 
-              </section>
+              </section> {% endcomment %}
             <div class="content-news__pagination news-pagination">
                 {% if page_obj.has_previous %}
                 <div class="news-pagination__arrow">

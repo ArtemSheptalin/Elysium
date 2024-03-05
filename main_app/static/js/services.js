@@ -1,6 +1,4 @@
 document.addEventListener('DOMContentLoaded', () => {
-    
-	// Валидация формы на Главной странице
 
 	let form_btn = document.getElementById('form_btn');
 	let first_name = document.getElementById('first_name');
@@ -25,15 +23,16 @@ document.addEventListener('DOMContentLoaded', () => {
 	}
 
 	validateForm();
+
 	
 	first_name.addEventListener('input', function() {
 		if (first_name.value === '' || first_name === "none") {
-			first_name.style.border = '1px solid rgba(225, 94, 103, 0.622)';
-			errorFirstNameElement.innerHTML = '<span style="color: rgba(225, 94, 103, 0.622);">How do I address you?</span>';
+			first_name.style.border = '1px solid #cc0704';
+			errorFirstNameElement.innerHTML = '<span style="color: #cc0704;">How do I address you?</span>';
 			name_error = true;
 		} else {
 			errorFirstNameElement.innerHTML = '';
-			first_name.style.border = '1px solid rgb(104, 220, 129)';
+			first_name.style.border = '1px solid #0cae1b';
 			name_error = false;
 		}
 		validateForm();
@@ -43,11 +42,11 @@ document.addEventListener('DOMContentLoaded', () => {
 	email.addEventListener('input', function() {
 		if (validateEmail(email.value)) {
 			errorEmailElement.innerHTML = '';
-			email.style.border = '1px solid rgb(104, 220, 129)';
+			email.style.border = '1px solid #0cae1b';
 			email_error = false;
 		} else {
-			email.style.border = '1px solid rgba(228, 10, 24, 0.622)';
-			errorEmailElement.innerHTML = '<span style="color: rgba(225, 94, 103, 0.622);">Oops, I have not found your e-mail in the field...</span>';
+			email.style.border = '1px solid #cc0704';
+			errorEmailElement.innerHTML = '<span style="color: #cc0704;">Oops, I have not found your e-mail in the field...</span>';
 			email_error = true;
 		}
 		validateForm();
@@ -56,12 +55,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
 	message.addEventListener('input', function() {
 		if (message.value === '' || message === "none") {
-			message.style.border = '1px solid rgba(228, 10, 24, 0.622)';
-			errorMessageElement.innerHTML = '<span style="color: rgba(225, 94, 103, 0.622);">Describe the problem and I promise, I will suggest the best solution!</span>';
+			message.style.border = '1px solid #cc0704';
+			errorMessageElement.innerHTML = '<span style="color: #cc0704;">Describe the problem and I promise, I will suggest the best solution!</span>';
 			message_error = true;
 		} else {
 			errorMessageElement.innerHTML = '';
-			message.style.border = '1px solid rgb(104, 220, 129)';
+			message.style.border = '1px solid #0cae1b';
 			message_error = false;
 		}
 		validateForm();
@@ -74,6 +73,5 @@ document.addEventListener('DOMContentLoaded', () => {
 			/^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
 		  );
 	}
-
 
 })

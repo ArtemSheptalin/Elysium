@@ -299,7 +299,7 @@ footer {
     border-bottom: 3px solid white;
   }
   10% {
-    border-image: linear-gradient(113deg, #58FFF8 0%, #7AAEFC 45.19%, #9867FF 85%);
+    border-image: linear-gradient(113deg, #7AAEFC 45.19%, #9867FF 85%);
     border-image-slice: 1;
     border-left: 3px solid transparent;
     border-bottom: 3px solid transparent;
@@ -320,8 +320,8 @@ footer {
     border-bottom: 3px solid white;
   }
   10% {
-    -o-border-image: linear-gradient(113deg, #58FFF8 0%, #7AAEFC 45.19%, #9867FF 85%);
-       border-image: linear-gradient(113deg, #58FFF8 0%, #7AAEFC 45.19%, #9867FF 85%);
+    -o-border-image: linear-gradient(113deg, #7AAEFC 45.19%, #9867FF 85%);
+       border-image: linear-gradient(113deg, #7AAEFC 45.19%, #9867FF 85%);
     border-image-slice: 1;
     border-left: 3px solid transparent;
     border-bottom: 3px solid transparent;
@@ -370,7 +370,7 @@ footer {
   padding: 8px 24px;
   position: relative;
   overflow: hidden;
-  background: linear-gradient(#090909 0 0) padding-box, linear-gradient(106deg, #58FFF8 -5.59%, #7AAEFC 46.25%, #9867FF 91.9%) border-box;
+  background: linear-gradient(#090909 0 0) padding-box, linear-gradient(106deg, #7AAEFC 46.25%, #9867FF 91.9%) border-box;
   border: 1px solid transparent;
   border-radius: 100px;
   z-index: 30;
@@ -779,10 +779,10 @@ footer {
   right: 0;
   margin: 0 auto;
   border-radius: 4px 4px 0px 0px;
-  background: linear-gradient(113deg, #58FFF8 15.41%, #7AAEFC 60.03%, #9867FF 99.33%), #D9D9D9;
+  background: #9867FF;
 }
 .header-navigation__point:hover .link {
-  background: linear-gradient(111deg, #58FFF8 -4.9%, #7AAEFC 50.97%, #9867FF 100.16%);
+  background: #9867FF;
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -799,8 +799,8 @@ footer {
   display: block;
   color: white;
   padding: 17px 73px 17px 29px;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #090909)) padding-box, -webkit-gradient(linear, left top, right top, from(#58FFF8), color-stop(#8593FD), to(#9867FF)) border-box;
-  background: linear-gradient(#090909 0 0) padding-box, linear-gradient(90deg, #58FFF8, #8593FD, #9867FF) border-box;
+  /* background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #090909)) padding-box, -webkit-gradient(linear, left top, right top, from(#58FFF8), color-stop(#8593FD), to(#9867FF)) border-box; */
+  background: linear-gradient(#090909 0 0) padding-box, linear-gradient(90deg, #8593FD, #9867FF) border-box;
   border: 1px solid transparent;
   border-radius: 30px;
   font-size: 16px;
@@ -831,7 +831,7 @@ footer {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background: linear-gradient(147deg, #58FFF8 -8.85%, #8593FD 14.67%, #9867FF 76.71%);
+  background: #9867FF;
   border-radius: 50%;
   width: 16px;
   height: 16px;
@@ -1015,6 +1015,7 @@ footer {
           transform: translateY(0%);
   visibility: visible;
 }
+
 .adaptive-menu svg {
   position: absolute;
   left: 0;
@@ -1096,7 +1097,7 @@ footer {
   color: white;
   padding: 17px 73px 17px 29px;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #090909)) padding-box, -webkit-gradient(linear, left top, right top, from(#58FFF8), color-stop(#8593FD), to(#9867FF)) border-box;
-  background: linear-gradient(#090909 0 0) padding-box, linear-gradient(90deg, #58FFF8, #8593FD, #9867FF) border-box;
+  background: linear-gradient(#090909 0 0) padding-box, linear-gradient(90deg, #8593FD, #9867FF) border-box;
   border: 1px solid transparent;
   border-radius: 30px;
   font-size: 16px;
@@ -1136,7 +1137,7 @@ footer {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background: linear-gradient(147deg, #58FFF8 -8.85%, #8593FD 14.67%, #9867FF 76.71%);
+  background: linear-gradient(147deg, #8593FD 14.67%, #9867FF 76.71%);
   border-radius: 50%;
   width: 56px;
   height: 56px;
@@ -1184,7 +1185,7 @@ footer {
   }
 }
 .welcome h1 span {
-  background: linear-gradient(107deg, #58FFF8 22.48%, #7AAEFC 59.12%, #9867FF 91.38%);
+  background: #9867FF;
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -1230,7 +1231,7 @@ footer {
   }
 }
 .welcome h2 span {
-  background: linear-gradient(113deg, #58FFF8 0%, #7AAEFC 45.19%, #9867FF 85%);
+  background: #9867FF;
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -1444,7 +1445,7 @@ footer {
   right: 0;
   margin: auto;
   z-index: -1;
-  fill: linear-gradient(110deg, #58FFF8 0.91%, #7AAEFC 40.15%, #9867FF 74.7%);
+  fill: linear-gradient(110deg, #7AAEFC 40.15%, #9867FF 74.7%);
   -webkit-filter: blur(19px);
           filter: blur(19px);
 }
@@ -1569,8 +1570,8 @@ footer {
   padding: 64px 32px;
   height: 488px;
   border-radius: 16px;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #090909)) padding-box, -webkit-gradient(linear, left top, left bottom, from(#58FFF8), color-stop(#8593FD), to(#9867FF)) border-box;
-  background: linear-gradient(#090909 0 0) padding-box, linear-gradient(#58FFF8, #8593FD, #9867FF) border-box;
+  /* background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #090909)) padding-box, -webkit-gradient(linear, left top, left bottom, from(#58FFF8), color-stop(#8593FD), to(#9867FF)) border-box; */
+  background: linear-gradient(#090909 0 0) padding-box, linear-gradient(#8593FD, #9867FF) border-box;
   border: 1.5px solid transparent;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1658,7 +1659,7 @@ footer {
   top: -2px;
   height: 8px;
   border-radius: 100px;
-  background: linear-gradient(112deg, #58FFF8 0%, #7AAEFC 53.66%, #9867FF 100.91%);
+  background: #9867FF;
 }
 
 .video {
@@ -1722,7 +1723,8 @@ footer {
   }
 }
 .video__row h2 span {
-  background: linear-gradient(113deg, #58FFF8 0%, #7AAEFC 45.19%, #9867FF 85%);
+  background: #9867FF;
+
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -1810,7 +1812,7 @@ footer {
   }
 }
 .about h3 span {
-  background: linear-gradient(106deg, #58FFF8 23.04%, #7AAEFC 60.74%, #9867FF 93.93%);
+  background: #9867FF;
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -1860,7 +1862,7 @@ footer {
 .about__row h2 {
   font-size: 64px;
   font-weight: 600;
-  background: linear-gradient(113deg, #58FFF8 0%, #7AAEFC 45.19%, #9867FF 85%);
+  background: #9867FF;
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -1917,7 +1919,7 @@ footer {
   left: 0;
   right: 0;
   margin: auto auto;
-  fill: linear-gradient(110deg, #58FFF8 0.91%, #7AAEFC 40.15%, #9867FF 74.7%);
+  fill: linear-gradient(110deg, #7AAEFC 40.15%, #9867FF 74.7%);
   -webkit-filter: blur(15px);
           filter: blur(15px);
   z-index: -1;
@@ -1966,7 +1968,7 @@ footer {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  background: linear-gradient(#090909 0 0) padding-box, linear-gradient(313deg, rgb(88, 255, 248) 0%, rgb(122, 174, 252) 45%, rgb(152, 103, 255) 100%) border-box;
+  background: linear-gradient(#090909 0 0) padding-box, linear-gradient(313deg, rgb(122, 174, 252) 0%, rgb(152, 103, 255) 100%) border-box;
   border: 1.5px solid transparent;
   border-radius: 16px;
 }
@@ -2083,7 +2085,7 @@ footer {
   font-size: 16px;
   font-weight: 700;
   line-height: 24px;
-  background: linear-gradient(#090909 0 0) padding-box, linear-gradient(313deg, rgb(88, 255, 248) 0%, rgb(122, 174, 252) 45%, rgb(152, 103, 255) 100%) border-box;
+  background: linear-gradient(#090909 0 0) padding-box, linear-gradient(313deg, rgb(122, 174, 252) 0%, rgb(152, 103, 255) 100%) border-box;
   border: 1.5px solid transparent;
   border-radius: 16px;
 }
@@ -2117,7 +2119,7 @@ footer {
   font-size: 16px;
   font-weight: 700;
   line-height: 24px;
-  background: linear-gradient(#090909 0 0) padding-box, linear-gradient(313deg, rgb(88, 255, 248) 0%, rgb(122, 174, 252) 45%, rgb(152, 103, 255) 100%) border-box;
+  background: linear-gradient(#090909 0 0) padding-box, linear-gradient(313deg, rgb(122, 174, 252) 0%, rgb(152, 103, 255) 100%) border-box;
   border: 1.5px solid transparent;
   border-radius: 16px;
 }
@@ -2145,7 +2147,7 @@ footer {
   width: 100%;
   padding: 50px 16px;
   border-radius: 16px;
-  background: linear-gradient(115deg, #58FFF8 -67.35%, #7AAEFC 11.17%, #9867FF 80.31%);
+  background: linear-gradient(115deg, #7AAEFC 0%, #9867FF 80.31%);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2194,7 +2196,7 @@ footer {
   position: absolute;
   bottom: -20%;
   right: -5px;
-  fill: linear-gradient(54deg, #58FFF8 6.76%, #7AAEFC 38.11%, #9867FF 65.73%);
+  fill: linear-gradient(54deg, #7AAEFC 0%, #9867FF 65.73%);
   -webkit-filter: blur(5px);
           filter: blur(5px);
   display: none;
@@ -2234,7 +2236,7 @@ footer {
   }
 }
 .services h1 span {
-  background: linear-gradient(113deg, #58FFF8 0%, #7AAEFC 45.19%, #9867FF 85%);
+  background: #9867FF;
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -2324,7 +2326,7 @@ footer {
   border-radius: 16px;
   height: 84px;
   width: 84px;
-  background: linear-gradient(313deg, rgb(88, 255, 248) 0%, rgb(122, 174, 252) 45%, rgb(152, 103, 255) 100%) border-box;
+  background: #9867FF;
   z-index: -1;
   opacity: 0;
   -webkit-transition: all 0.9s ease;
@@ -2452,7 +2454,7 @@ footer {
 .stages .stage__title-column span {
   display: inline-block;
   font-size: 32px;
-  background: linear-gradient(113deg, #58FFF8 0%, #7AAEFC 45.19%, #9867FF 85%);
+  background: #9867FF;
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -2570,7 +2572,7 @@ footer {
   left: -1px;
   right: 0;
   bottom: 0;
-  background: linear-gradient(111deg, #58FFF8 -2.42%, #8593FD 56.12%, #9867FF 97.92%);
+  background: #9867FF;
   z-index: 1;
   border-radius: 50%;
 }
@@ -2639,8 +2641,8 @@ footer {
   line-height: 18px;
 }
 .stages .stage__content-column .accordions .accordion.open {
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #0f0f0f)) padding-box, -webkit-gradient(linear, left top, right top, from(#58FFF8), color-stop(#8593FD), to(#9867FF)) border-box;
-  background: linear-gradient(#0f0f0f 0 0) padding-box, linear-gradient(90deg, #58FFF8, #8593FD, #9867FF) border-box;
+  /* background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #0f0f0f)) padding-box, -webkit-gradient(linear, left top, right top, from(#58FFF8), color-stop(#8593FD), to(#9867FF)) border-box; */
+  background: linear-gradient(#0f0f0f 0 0) padding-box, linear-gradient(90deg, #8593FD, #9867FF) border-box;
 }
 .stages .stage__content-column .accordions .accordion.open .accordion__content {
   opacity: 1;
@@ -2714,7 +2716,7 @@ footer {
   border-radius: 16px;
   height: 103%;
   width: 101.5%;
-  background: linear-gradient(313deg, rgb(88, 255, 248) 0%, rgb(122, 174, 252) 45%, rgb(152, 103, 255) 100%) border-box;
+  background: #9867FF;
   z-index: -2;
   opacity: 0;
   -webkit-transition: all 0.9s ease;
@@ -2864,7 +2866,7 @@ footer {
   border-radius: 16px;
   height: 103%;
   width: 102%;
-  background: linear-gradient(313deg, rgb(88, 255, 248) 0%, rgb(122, 174, 252) 45%, rgb(152, 103, 255) 100%) border-box;
+  background: #9867FF;
   z-index: -2;
   opacity: 0;
   -webkit-transition: all 0.9s ease;
@@ -3095,7 +3097,7 @@ footer {
   }
 }
 .stages .stage__title span {
-  background: linear-gradient(107deg, #58FFF8 17.37%, #7AAEFC 60.44%, #9867FF 98.36%);
+  background: #9867FF;
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -3193,8 +3195,8 @@ footer {
   z-index: -2;
   background-color: #94DBFF;
   max-width: 1147px;
-  background: -webkit-gradient(linear, left top, right top, from(#94DBFF), color-stop(85%, #0086CA));
-  background: linear-gradient(90deg, #94DBFF 0%, #0086CA 85%);
+  /* background: -webkit-gradient(linear, left top, right top, from(#94DBFF), color-stop(85%, #0086CA)); */
+  background: linear-gradient(90deg, #9867FF 95%, #0086CA 0%);
 }
 @media (max-width: 1400px) {
   .phase__row::after {
@@ -3304,7 +3306,7 @@ footer {
   border-radius: 100px;
   height: 58px;
   width: 58px;
-  background: linear-gradient(113deg, #58FFF8 0%, #7AAEFC 45.19%, #9867FF 85%);
+  background: #9867FF;
   z-index: -1;
   opacity: 1;
   -webkit-transition: all 0.9s ease;
@@ -3359,7 +3361,7 @@ footer {
   max-width: 804px;
   display: none;
   color: #FFF;
-  background: linear-gradient(#090909 0 0) padding-box, linear-gradient(120deg, #58FFF8, #8593FD, #9867FF) border-box;
+  background: linear-gradient(#090909 0 0) padding-box, linear-gradient(120deg, #8593FD, #9867FF) border-box;
   border: 1.5px solid transparent;
 }
 .phase-content__item span {
@@ -3413,7 +3415,7 @@ footer {
   left: 0;
   right: 0;
   margin: 0 auto;
-  fill: linear-gradient(110deg, #58FFF8 0.91%, #7AAEFC 40.15%, #9867FF 74.7%);
+  fill: linear-gradient(110deg, #7AAEFC 40.15%, #9867FF 74.7%);
   -webkit-filter: blur(10px);
           filter: blur(10px);
 }
@@ -3476,7 +3478,7 @@ footer {
   }
 }
 .career__title h1 span {
-  background: linear-gradient(107deg, #58FFF8 22.48%, #7AAEFC 59.12%, #9867FF 91.38%);
+  background: #9867FF;
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -3619,7 +3621,7 @@ footer {
   position: absolute;
   bottom: -50px;
   left: -20px;
-  fill: linear-gradient(113deg, #58FFF8 0%, #7AAEFC 45.19%, #9867FF 85%);
+  fill: linear-gradient(113deg, #7AAEFC 45.19%, #9867FF 85%);
   -webkit-filter: blur(17px);
           filter: blur(17px);
 }
@@ -3648,7 +3650,7 @@ footer {
 .work-with-us .work-title {
   font-size: 64px;
   font-weight: 600;
-  background: linear-gradient(113deg, #58FFF8 0%, #7AAEFC 45.19%, #9867FF 85%);
+  background: #9867FF;
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -3790,7 +3792,7 @@ footer {
   }
 }
 .perfomance h2 span {
-  background: linear-gradient(108deg, #58FFF8 60.68%, #7AAEFC 77.65%, #9867FF 98.13%);
+  background: #9867FF;
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -3979,7 +3981,7 @@ footer {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  background: linear-gradient(#090909 0 0) padding-box, linear-gradient(313deg, rgb(88, 255, 248) 0%, rgb(122, 174, 252) 45%, rgb(152, 103, 255) 100%) border-box;
+  background: linear-gradient(#090909 0 0) padding-box, linear-gradient(313deg, rgb(122, 174, 252) 45%, rgb(152, 103, 255) 100%) border-box;
   border: 1.5px solid transparent;
   border-radius: 16px;
 }
@@ -4130,7 +4132,7 @@ footer {
   font-size: 16px;
   font-weight: 700;
   line-height: 24px;
-  background: linear-gradient(#090909 0 0) padding-box, linear-gradient(313deg, rgb(88, 255, 248) 0%, rgb(122, 174, 252) 45%, rgb(152, 103, 255) 100%) border-box;
+  background: linear-gradient(#090909 0 0) padding-box, linear-gradient(313deg, rgb(122, 174, 252) 45%, rgb(152, 103, 255) 100%) border-box;
   border: 1.5px solid transparent;
   border-radius: 16px;
 }
@@ -4159,7 +4161,7 @@ footer {
   font-size: 16px;
   font-weight: 700;
   line-height: 24px;
-  background: linear-gradient(#090909 0 0) padding-box, linear-gradient(313deg, rgb(88, 255, 248) 0%, rgb(122, 174, 252) 45%, rgb(152, 103, 255) 100%) border-box;
+  background: linear-gradient(#090909 0 0) padding-box, linear-gradient(313deg, rgb(122, 174, 252) 45%, rgb(152, 103, 255) 100%) border-box;
   border: 1.5px solid transparent;
   border-radius: 16px;
 }
@@ -4182,7 +4184,7 @@ footer {
   width: 100%;
   padding: 50px 16px;
   border-radius: 16px;
-  background: linear-gradient(115deg, #58FFF8 -67.35%, #7AAEFC 11.17%, #9867FF 80.31%);
+  background: #9867FF;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -4262,7 +4264,7 @@ footer {
   line-height: 120%;
 }
 .idea-preview h1 span {
-  background: linear-gradient(113deg, #58FFF8 0%, #7AAEFC 45.19%, #9867FF 85%);
+  background: #9867FF;
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -4421,7 +4423,7 @@ footer {
   margin-top: 8px;
   font-size: 88px;
   font-weight: 600;
-  background: linear-gradient(113deg, #58FFF8 0%, #7AAEFC 45.19%, #9867FF 85%);
+  background: #9867FF;
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -4580,7 +4582,7 @@ footer {
   }
 }
 .target-slogan__text {
-  background: linear-gradient(#090909 0 0) padding-box, linear-gradient(105deg, #58FFF8, #8593FD, #9867FF) border-box;
+  background: linear-gradient(#090909 0 0) padding-box, #9867FF;
   border: 1.5px solid transparent;
   padding: 56px 0;
   text-align: center;
@@ -4768,7 +4770,7 @@ footer {
   border-radius: 8px;
   height: 103%;
   width: 101%;
-  background: linear-gradient(313deg, rgb(88, 255, 248) 0%, rgb(122, 174, 252) 45%, rgb(152, 103, 255) 100%) border-box;
+  background: #9867FF;
   z-index: -2;
   opacity: 0;
   -webkit-transition: all 0.9s ease;
@@ -4853,7 +4855,7 @@ footer {
   font-weight: 600;
 }
 .reviews__title h2 span {
-  background: linear-gradient(109deg, #58FFF8 3.66%, #7AAEFC 29.77%, #9867FF 52.76%);
+  background: #9867FF;
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -5014,8 +5016,7 @@ footer {
 }
 
 .news .green:hover {
-  
-    background: linear-gradient(111deg, #58FFF8 -4.9%, #7AAEFC 50.97%, #9867FF 100.16%);
+    background: #9867FF;
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -5026,7 +5027,7 @@ footer {
 }
 
 .news .white:hover {
-    background: linear-gradient(111deg, #58FFF8 -4.9%, #7AAEFC 50.97%, #9867FF 100.16%);
+    background: #9867FF;
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -5037,7 +5038,7 @@ footer {
 }
 
 .news .purple:hover {
-  background: linear-gradient(111deg, #58FFF8 -4.9%, #7AAEFC 50.97%, #9867FF 100.16%);
+  background: #9867FF;
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -5049,7 +5050,7 @@ footer {
 }
 
 .news .violent:hover {
-  background: linear-gradient(111deg, #58FFF8 -4.9%, #7AAEFC 50.97%, #9867FF 100.16%);
+  background: #9867FF;
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -5194,6 +5195,7 @@ footer {
   height: 100%;
   width: 100%;
   border-radius: 8px;
+  background-size: cover; 
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: center;
@@ -5505,7 +5507,7 @@ footer {
 }
 
 .accept__button {
-  background: linear-gradient(#090909 0 0) padding-box, linear-gradient(105deg, #58FFF8, #8593FD, #9867FF) border-box;
+  background: linear-gradient(#090909 0 0) padding-box, linear-gradient(105deg, #8593FD, #9867FF) border-box;
   border: 1.5px solid transparent;
   color: #fff;
 }
@@ -5671,7 +5673,7 @@ footer {
 }
 
 .consultate__button {
-  background: linear-gradient(#090909 0 0) padding-box, linear-gradient(105deg, #58FFF8, #8593FD, #9867FF) border-box;
+  background: linear-gradient(#090909 0 0) padding-box, linear-gradient(105deg, #8593FD, #9867FF) border-box;
   border: 1.5px solid transparent;
   color: #fff;
 }
@@ -5730,6 +5732,9 @@ footer {
 
 .idea__perfomance {
   border-top: 1px solid rgba(255, 255, 255, 0.4); 
+}
 
+.lack__projects {
+  color: #C8DEFF;
 }
 

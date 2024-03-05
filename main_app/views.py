@@ -121,19 +121,30 @@ class ProjectsView(ListView):
 
             if self.request.GET.get('development'):
                 queryset = queryset.filter(category=1)
+                if not queryset.exists():
+                    queryset = ''
             
             elif self.request.GET.get('intelligence'):
                 queryset = queryset.filter(category=2)
+                if not queryset.exists():
+                    queryset = ''
 
             elif self.request.GET.get('analysis'):
                 queryset = queryset.filter(category=3)
+                if not queryset.exists():
+                    queryset = ''
 
             elif self.request.GET.get('optimization'):
                 queryset = queryset.filter(category=4)
+                if not queryset.exists():
+                    queryset = ''
             
             else:
                 queryset = queryset.filter(category=1)
+                if not queryset.exists():
+                    queryset = ''
 
+            
             return queryset
 
         

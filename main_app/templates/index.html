@@ -4,25 +4,25 @@
 {% block title %}Elysium | Software Development Community{% endblock %}
 {% block content %}
 
-<section class="video">
+{% comment %} <section class="video">
     <div class="video__row container">
         <h2>Which of these IT tools <br>
-            <span>will drive growth <br>for YOUR business?</span> </h2>
+            will drive growth <br>for YOUR business?</h2>
+
         <img src={% static "img/images/robot.jpg"%}>
     </div>
-</section>
+</section> {% endcomment %}
 
 <section class="welcome">
+    <h2>
+        Which of these IT tools<br><span> will drive growth for YOUR business?</span>
+    </h2>
     <a href="{% url 'main_page' %}#connection_form" class="welcome-button">
         Contact me
         <div class="welcome-button__arrow">
             <img src={% static "img/icons/arrow.svg"%}>
         </div>
     </a>
-    
-    <h2>
-        If you're an entrepreneur,<br><span> your greatest asset is Elysium</span>
-    </h2>
 </section>
 
 <section class="about">

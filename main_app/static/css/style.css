@@ -241,7 +241,7 @@ html, body {
 
 body {
   font-family: "Mulish";
-  background: #090909;
+  background: linear-gradient(to bottom, #080812, #090915, #090917);
   color: #FFF;
   padding-top: 88px;
 }
@@ -370,7 +370,7 @@ footer {
   padding: 8px 24px;
   position: relative;
   overflow: hidden;
-  background: linear-gradient(#090909 0 0) padding-box, linear-gradient(106deg, #7AAEFC 46.25%, #9867FF 91.9%) border-box;
+  background: linear-gradient(#090909 0 0) padding-box, #9867FF border-box;
   border: 1px solid transparent;
   border-radius: 100px;
   z-index: 30;
@@ -390,7 +390,7 @@ footer {
   border-radius: 100px;
   height: 104%;
   width: 104%;
-  background: linear-gradient(106deg, #58FFF8 -5.59%, #7AAEFC 46.25%, #9867FF 91.9%) border-box;
+  background: linear-gradient( 113deg, #d258f5, #994ae6, #433dd9) border-box;
   z-index: 1;
   opacity: 0;
   -webkit-transition: all 0.5s ease;
@@ -779,10 +779,11 @@ footer {
   right: 0;
   margin: 0 auto;
   border-radius: 4px 4px 0px 0px;
-  background: #9867FF;
+  background: linear-gradient( 113deg, #d258f5, #994ae6, #433dd9);
 }
 .header-navigation__point:hover .link {
-  background: #9867FF;
+  /* background: #9867FF; */
+  background: linear-gradient( 113deg, #d258f5, #994ae6, #433dd9);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -800,7 +801,8 @@ footer {
   color: white;
   padding: 17px 73px 17px 29px;
   /* background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #090909)) padding-box, -webkit-gradient(linear, left top, right top, from(#58FFF8), color-stop(#8593FD), to(#9867FF)) border-box; */
-  background: linear-gradient(#090909 0 0) padding-box, linear-gradient(90deg, #8593FD, #9867FF) border-box;
+  /* background: linear-gradient(#090909 0 0) padding-box, linear-gradient(90deg, #8593FD, #9867FF) border-box; */
+  background: linear-gradient(#090909 0 0) padding-box,  linear-gradient( 113deg, #d258f5, #994ae6, #433dd9) border-box;
   border: 1px solid transparent;
   border-radius: 30px;
   font-size: 16px;
@@ -831,7 +833,7 @@ footer {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background: #9867FF;
+  background: linear-gradient( 113deg, #d258f5, #994ae6, #433dd9);;
   border-radius: 50%;
   width: 16px;
   height: 16px;
@@ -847,8 +849,8 @@ footer {
   transition: all 0.3s ease;
 }
 .header-button:hover {
-  -webkit-box-shadow: 0px 0px 16px 2px #956EFE;
-          box-shadow: 0px 0px 16px 2px #956EFE;
+  -webkit-box-shadow: 0px 0px 16px 2px #433dd9;
+          box-shadow: 0px 0px 16px 2px #433dd9;
 }
 .header-button:hover .header-button__arrow {
   width: 56px;
@@ -1097,7 +1099,7 @@ footer {
   color: white;
   padding: 17px 73px 17px 29px;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #090909)) padding-box, -webkit-gradient(linear, left top, right top, from(#58FFF8), color-stop(#8593FD), to(#9867FF)) border-box;
-  background: linear-gradient(#090909 0 0) padding-box, linear-gradient(90deg, #8593FD, #9867FF) border-box;
+  background: linear-gradient(#090909 0 0) padding-box,  linear-gradient( 113deg, #d258f5, #994ae6, #9867FF) border-box;
   border: 1px solid transparent;
   border-radius: 30px;
   font-size: 16px;
@@ -1137,7 +1139,7 @@ footer {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background: linear-gradient(147deg, #8593FD 14.67%, #9867FF 76.71%);
+  background: #9867FF;
   border-radius: 50%;
   width: 56px;
   height: 56px;
@@ -1231,7 +1233,9 @@ footer {
   }
 }
 .welcome h2 span {
-  background: #9867FF;
+  /* background: #9867FF; */
+  /* background:  linear-gradient( 113deg, #d258f5, #994ae6, #433dd9); */
+  background:  #9867FF;
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -1445,7 +1449,7 @@ footer {
   right: 0;
   margin: auto;
   z-index: -1;
-  fill: linear-gradient(110deg, #7AAEFC 40.15%, #9867FF 74.7%);
+  fill: #9867FF;
   -webkit-filter: blur(19px);
           filter: blur(19px);
 }
@@ -1571,7 +1575,7 @@ footer {
   height: 488px;
   border-radius: 16px;
   /* background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #090909)) padding-box, -webkit-gradient(linear, left top, left bottom, from(#58FFF8), color-stop(#8593FD), to(#9867FF)) border-box; */
-  background: linear-gradient(#090909 0 0) padding-box, linear-gradient(#8593FD, #9867FF) border-box;
+  background: linear-gradient(#090909 0 0) padding-box, #9867FF border-box;
   border: 1.5px solid transparent;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1771,11 +1775,11 @@ footer {
 .about svg {
   position: absolute;
   left: 15px;
-  bottom: 250px;
+  bottom: 45px;
   z-index: -1;
   -webkit-filter: blur(29px);
           filter: blur(29px);
-  fill: linear-gradient(113deg, #58FFF8 0%, #7AAEFC 45.19%, #9867FF 85%);
+  /* fill: linear-gradient(113deg, #d258f5, #994ae6, #433dd9); */
 }
 .about h3 {
   margin-top: 200px;
@@ -1919,7 +1923,7 @@ footer {
   left: 0;
   right: 0;
   margin: auto auto;
-  fill: linear-gradient(110deg, #7AAEFC 40.15%, #9867FF 74.7%);
+  fill: #9867FF;
   -webkit-filter: blur(15px);
           filter: blur(15px);
   z-index: -1;
@@ -1968,7 +1972,7 @@ footer {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  background: linear-gradient(#090909 0 0) padding-box, linear-gradient(313deg, rgb(122, 174, 252) 0%, rgb(152, 103, 255) 100%) border-box;
+  background: linear-gradient(#090909 0 0) padding-box, #9867FF border-box;
   border: 1.5px solid transparent;
   border-radius: 16px;
 }
@@ -2085,7 +2089,7 @@ footer {
   font-size: 16px;
   font-weight: 700;
   line-height: 24px;
-  background: linear-gradient(#090909 0 0) padding-box, linear-gradient(313deg, rgb(122, 174, 252) 0%, rgb(152, 103, 255) 100%) border-box;
+  background: linear-gradient(#090909 0 0) padding-box, #9867FF border-box;
   border: 1.5px solid transparent;
   border-radius: 16px;
 }

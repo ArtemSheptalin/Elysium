@@ -242,6 +242,7 @@ html, body {
 body {
   font-family: "Mulish";
   background: linear-gradient(to bottom, #080812, #090915, #090917);
+  /* background: #192146; */
   color: #FFF;
   padding-top: 88px;
 }
@@ -1285,8 +1286,7 @@ footer {
   }
 }
 .welcome h2 span {
-  /* background: #9867FF; */
-  /* background:  linear-gradient( 113deg, #ec783a, #ae575a, #4e5ff8); */
+  /* background:  linear-gradient( 113deg, #ee46ab, #f680ae, #fb6c3b); */
   background:  #9867FF;
   background-clip: text;
   -webkit-background-clip: text;
@@ -1829,11 +1829,10 @@ footer {
 .about svg {
   position: absolute;
   left: 15px;
-  bottom: 45px;
+  bottom: 185px;
   z-index: -1;
   -webkit-filter: blur(29px);
           filter: blur(29px);
-  /* fill: linear-gradient(113deg, #d258f5, #994ae6, #433dd9); */
 }
 .about h3 {
   margin-top: 200px;
@@ -1855,6 +1854,9 @@ footer {
   }
   .about h3 br {
     display: none;
+  }
+  .about svg {
+    bottom: 85px;
   }
 }
 @media (max-width: 710px) {
@@ -1918,7 +1920,7 @@ footer {
   }
 }
 .about__row h2 {
-  font-size: 64px;
+  font-size: 44px;
   font-weight: 600;
   background: #9867FF;
   background-clip: text;
@@ -1927,12 +1929,12 @@ footer {
 }
 @media (max-width: 1020px) {
   .about__row h2 {
-    font-size: 45px;
+    font-size: 34px;
   }
 }
 @media (max-width: 710px) {
   .about__row h2 {
-    font-size: 42px;
+    font-size: 34px;
   }
   .about__row h2 br {
     display: none;
@@ -1940,7 +1942,7 @@ footer {
 }
 @media (max-width: 520px) {
   .about__row h2 {
-    font-size: 38px;
+    font-size: 34px;
   }
 }
 .about__image {
@@ -1955,6 +1957,18 @@ footer {
   -o-object-position: center;
      object-position: center;
 }
+
+.about__image img:hover, .about__image img:focus {
+  box-shadow: 0 0 10px 5px rgba(88, 255, 248, 0.3), 0 0 20px 10px rgba(122, 174, 252, 0.2), 0 0 30px 15px rgba(152, 103, 255, 0.1);
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.about__image img:not(:hover), .about__image img:not(:focus) {
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
 
 .form-one {
   margin-top: 114px;
@@ -5768,6 +5782,7 @@ footer {
 
 .about__row.about-elysium a {
   text-decoration: underline;
+  color: #9867FF;
 }
 
 .about__row.about-elysium a:hover {

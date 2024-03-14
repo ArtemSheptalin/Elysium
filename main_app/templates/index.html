@@ -18,7 +18,7 @@
         Which of these IT tools<br><span> will drive growth for YOUR business?</span>
     </h2>
     <a href="{% url 'main_page' %}#connection_form" class="welcome-button">
-        Contact me
+        Get This Quiz
         <div class="welcome-button__arrow">
             <img src={% static "img/icons/arrow.svg"%}>
         </div>
@@ -26,7 +26,7 @@
 </section>
 
 <section class="about">
-    <svg xmlns="http://www.w3.org/2000/svg" width="90%" height="70%" viewBox="0 0 1388 916" fill="none">
+    {% comment %} <svg xmlns="http://www.w3.org/2000/svg" width="90%" height="70%" viewBox="0 0 1388 916" fill="none">
         <g filter="url(#filter0_f_161_1235)">
           <path d="M788.022 405.133C1012.88 492.15 1225.72 429.642 1168.2 578.272C1110.68 726.903 428.797 737.724 203.938 650.707C-20.9218 563.69 296.396 411.787 353.914 263.156C411.431 114.525 563.163 318.116 788.022 405.133Z" fill="url(#paint0_linear_161_1235)"/>
         </g>
@@ -42,27 +42,31 @@
             <stop offset="1" stop-color="#9867FF"/>
           </linearGradient>
         </defs>
-    </svg>
+    </svg> {% endcomment %}
     <div class="container">
         <div class="about__row about-elysium">
-            <h2>Introduction</h2>
+            <h2>Do you feel the satisfaction of how your business running?</h2>
             <div class="about-elysium__text">
                 <p> 
                     As you explore this website, keep in mind that many entrepreneurs are not in control of their businesses; rather, their businesses control them. Consequently, they work for their business, rather than it works for them. However, there is a way to reverse the situation.
                 </p>
                 <p>
-                    Elysium is an IT company that specializes in innovative IT solutions that allow our clients to expand the scope of their activities, and save time and resources to be focused on their core tasks. With the resulting product, you will get a guarantee period to make sure the technology works as needed. Also, you will receive comprehensive instructions meticulously prepared by our top specialists and a personal Elysium assistant who will help you effectively manage your business using the IT tools we provide. <a href="{% url 'main_page' %}#connection_form">Fill out the form below</a> and take control of both your business and your life.
+                    Our community understands that entrepreneurs are typically responsible for every aspect of their business, from strategic decision-making and financial management to customer relations and operational tasks. This level of responsibility can be all-encompassing, leaving little time for personal pursuits. We appreciate those who are passionate about their ventures and are dedicated to seeing them succeed. We understand that this passion can drive you to work tirelessly, often at the expense of personal time and main goals. So, here we provide you with technological solutions that would work for YOU. 
                 </p>
                 <p>
-                    Welcome to Elysium, where your challenges hold paramount importance.
+                    Elysium is an IT company that specializes in innovative IT solutions that allow our clients to expand the scope of their activities, and save time and resources to be focused on their core tasks. Welcome to Elysium, where your challenges hold paramount importance.
                 </p>
+                <p>
+                    <a href="{% url 'main_page' %}#connection_form">Fill out the form below</a> and take control of both your business and your life.
+                </p>
+                
             </div>
         </div>
         <div class="about__image">
             <img src={% static "img/images/man.jpg"%}>
         </div>
         <h3>
-            Want To Grow Your Business?<br> <span>Check our clients experience</span>
+            Do you feel undervalued?<br> <span>Check our clients experience</span>
         </h3>
         
     </div>
@@ -172,7 +176,7 @@
             <div class="information-column__header">
                 <h2 id="info__header">Let us help you, <br>
                     tell your worries?</h2>
-                <p id="info__paragraph">Sign up for a FREE consultation with IT Business Expert and receive Web Site Optimization Instructions powered by our BEST specialists.</p>
+                <p id="info__paragraph">Sign up for a FREE consultation with our Expert and receive Web Site Optimization Instructions powered by our specialists.</p>
                 <p>And if we don't find a solution - you owe us nothing</p>
 
             </div>
